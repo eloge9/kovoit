@@ -1,0 +1,16 @@
+{
+    "name": " ",
+    "short_name": "TaxiMode | Taxi Booking Mobile PWA HTML Template",
+    "description": "TaxiMode | Taxi Booking Mobile PWA HTML Template",
+    "start_url": "/splash.html",
+    "display": "minimal-ui",
+    "background_color": "#ffffff",
+    "theme_color": "#2DBB54",
+    "icons": [
+        {
+            "src": "img/img_taximode_pwa.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

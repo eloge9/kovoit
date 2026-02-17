@@ -1,0 +1,35 @@
+# Environnement virtuel
+venv/
+env/
+ENV/
+.venv/
+
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Fichier base de données SQLite
+db.sqlite3
+
+# Fichiers d’environnement
+.env
+
+# Fichiers VS Code
+.vscode/
+
+# Fichiers PyCharm
+.idea/
+
+# Logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers migrations compilés
+*/migrations/*.pyc
+
+
+kovoit/settings_local.py
