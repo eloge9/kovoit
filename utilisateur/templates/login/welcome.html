@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <!-- Mirrored from taxi-mode.vercel.app/welcome.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Feb 2026 10:31:31 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- PWA Manifest File -->
+    <link
+      rel="manifest"
+      href="manifest.json"
+      data-pwa-version="set_in_manifest_and_pwa_js"
+    />
+    <!-- Mobile Specific Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover"
+    />
+    <!-- SEO Informations -->
+    <title>TaxiMode - Taxi Booking App | Welcome</title>
+    <meta
+      name="description"
+      content="TaxiMod - Taxi Booking Mobile PWA HTML Template"
+    />
+    <meta
+      name="keywords"
+      content="TaxiMode, Taxi Booking Mobile PWA HTML Template, Taxi Services App, PWA Mobile Template, TaxiMode PWA Progressive Web Application, Taxi Services Progressive Web Application"
+    />
+    <meta name="author" content="Shreyanshi Infotech" />
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link
+      rel="android-chrome-icon"
+      sizes="72x72"
+      href="img/android-chrome-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <!--- CSS File --->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="m-0 p-0">
+    <!-- Start Preloader -->
+    <div class="loader-mask">
+      <div class="pre-loader">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- End Preloader -->
+    <!--- Start Main Content --->
+    <div class="container justify-content-center px-0">
+      <div class="vh-100">
+        <!--- Start Welcome to TaxiMode --->
+        <div class="boarding-section">
+          <img src="img/img-bg-welcome.jpg" alt="img" />
+        </div>
+        <!--- End Welcome to TaxiMode --->
+        <!--- Start Content --->
+        <div class="boarding-content text-center">
+          <div class="tm-container">
+            <div class="boarding-title mt-40">
+              <img src="img/img-welcome-text.svg" />
+            </div>
+            <div class="d-grid mb-3 mt-40">
+              <a href="{% url 'utilisateur:connection_phone' %}" target="_self">
+                <button
+                  class="btn btn-primary btn-lg tm-secondary-button col-12 d-flex justify-content-center align-content-center"
+                >
+                  <img src="img/icon-phone.svg" class="me-2" />
+                  <span>Continue with Mobile Number</span>
+                </button>
+              </a>
+            </div>
+            <div class="d-flex gap-3">
+              <button
+                class="btn btn-primary btn-lg col d-flex align-items-center justify-content-center tm-secondary-button"
+                type="button"
+                id="open_new_tab_google"
+              >
+                <img src="img/icon-google.svg" class="me-2" />
+                <span>Google</span>
+              </button>
+              <button
+                class="btn btn-primary btn-lg col d-flex align-items-center justify-content-center tm-secondary-button"
+                type="button"
+                id="open_new_tab_facebook"
+              >
+                <img src="img/icon-facebook.svg" class="me-2" />
+                <span>Facebook</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--- End Content --->
+        <!--- Start Privacy Policy --->
+        <div class="tm-container text-center mt-45 py-2">
+          <p class="bottom font-size-13 txt-grey">
+            By continue you agree that you have read and accept our
+            <br />
+            <a href="termsconditions.html" class="tm-primary-color fw-bold">
+              <u>Terms & Conditions</u>
+            </a>
+            and
+            <a href="privacypolicy.html" class="tm-primary-color fw-bold">
+              <u>Privacy Policy</u>
+            </a>
+          </p>
+        </div>
+        <div>
+          <!--- Start Go Button --->
+          <div class="justify-content-center d-flex mt-8">
+            <a href="{% url 'utilisateur:inscription' %}" target="_self">
+              s'inscrire
+            </a>
+          </div>
+          <!--- End Go Button --->
+        </div>
+        <!--- End Privacy Policy --->
+      </div>
+    </div>
+    <!--- End Main Content --->
+    <!--- Start External JS File -->
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--- End External JS File -->
+    <!--- Start Preloader Script -->
+    <script type="text/javascript">
+      $(window).load(function () {
+        $(".loader").fadeOut();
+        $(".loader-mask").delay(250).fadeOut("slow");
+      });
+    </script>
+    <!--- End Preloader Script -->
+    <!--- Start PWA Script Progressive Web App -->
+    <script type="text/javascript">
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("service-worker.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registered with scope:",
+                registration.scope,
+              );
+            })
+            .catch((error) => {
+              console.error("Service Worker registration failed:", error);
+            });
+        });
+      }
+    </script>
+    <!--- End PWA Script Progressive Web App -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#open_new_tab_google").click(function () {
+          var go_to_url = $("#websites").find(":selected").val();
+          window.open("https://www.google.co.in/", "_blank");
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#open_new_tab_facebook").click(function () {
+          var go_to_url = $("#websites").find(":selected").val();
+          window.open("https://www.facebook.com/login/", "_blank");
+        });
+      });
+    </script>
+  </body>
+
+  <!-- Mirrored from taxi-mode.vercel.app/welcome.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Feb 2026 10:31:40 GMT -->
+</html>

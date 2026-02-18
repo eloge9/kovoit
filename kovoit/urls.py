@@ -19,7 +19,10 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('kovoit.urls')),
-    path('', include('kovoit.urls')),
-    path('', include('kovoit.urls')),
+    path('', include('utilisateur.urls')),
+    path('avis/', include('avis.urls')),
+    path('payement/', include('payement.urls')),
+    path('temp_reel/', include('temps_reel.urls')),
+    path('trajet/', include('trajet.urls')),
+    path('administateur/', include('admin.urls')),
 ]
